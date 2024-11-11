@@ -1,0 +1,90 @@
+.auth-container {
+  width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(205, 201, 201, 0.1);
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border: 1px solid rgb(237, 234, 234);
+}
+
+input.error {
+  border: 2px solid red;
+}
+
+input.input-error {
+  border: 1px solid rgb(237, 46, 46);
+}
+
+.error-text {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.btn-submit, .btn-otp, .forgot-password-link, .toggle-btn, .method-btn {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.btn-submit {
+  background-color: #181b5a;
+  color: white;
+}
+
+.input-error {
+  border: 2px solid red;
+}
+
+.btn-otp {
+  background-color: #135aa5;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.method-select {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.method-btn {
+  background-color: #031f4f;
+  color: white;
+}
+
+.input-error {
+  border: 2px solid red;
+}
+
+
+.method-btn:hover {
+  background-color: #0a0662;
+}
+
+.forgot-password-link {
+  color: rgb(47, 47, 244);
+  background: none;
+  text-decoration: underline;
+  
+}
+
+
