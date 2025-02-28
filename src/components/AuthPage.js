@@ -4,7 +4,7 @@ import './AuthPage.css'; // Ensure this CSS file exists and is styled appropriat
 const AuthPage = () => {
   const [isSignup, setIsSignup] = useState(false);
   const [loginInput, setLoginInput] = useState('');
-  const [selectedMethod, setSelectedMethod] = useState('');
+  const [selectedMethod, setSelectedMethod] = useState('Username');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [mobile, setMobile] = useState('');
@@ -42,7 +42,7 @@ const AuthPage = () => {
       errors.email = true;
     }
     if ((selectedMethod === 'Username' || selectedMethod === 'Email') && !loginPassword) {
-      errors.loginPassword = true; // Flag for empty password
+      errors.loginPassword = true; 
       alert('Password is required.');
     }
     if (selectedMethod === 'Mobile Number' && !mobile) {
@@ -261,7 +261,7 @@ const AuthPage = () => {
 
       {!isSignup && !isResetPassword && (
         <button onClick={() => setIsSignup(true)} className="toggle-btn">
-          New user? Sign Up
+          Don't have account? Sign Up
         </button>
       )}
       {isSignup && (
